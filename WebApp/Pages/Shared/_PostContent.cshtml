@@ -1,0 +1,13 @@
+@model WebApp.Pages.Models.BasePostPage
+@{
+    ViewData["Title"] = Model.Metadata.Title;
+}
+
+<div class="content-container px-4">
+    <div class="mt-5 mb-3">
+        <h2>@Model.Metadata.Title</h2>
+    </div>
+    <p>
+        @Html.Raw(Model.PageContent)
+    </p>
+</div>
