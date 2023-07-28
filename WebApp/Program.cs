@@ -23,6 +23,7 @@ builder.Services.AddSingleton<IStaticPagesInfoProvider>(
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
+app.UsePathBase("/AspNetStaticDemo");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
